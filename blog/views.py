@@ -14,7 +14,7 @@ posts = [
 		'title':'Blog Post 2',
 		'content':'Second Post Content',
 		'date_posted':'April 8, 2020',
-	},
+	}
 
 ]
 
@@ -27,8 +27,6 @@ def about(request):
 	}
 	# return HttpResponse('Blog About')
 	return render(request,'blog/about.html',context)
-
-
 
 
 
