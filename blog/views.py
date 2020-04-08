@@ -33,11 +33,11 @@ def about(request):
 
 
 def home(request):
-	# context = {
-	# 	'posts':posts
-	# }
+	context = {
+		'posts':Post.objects.all()
+	}
 	# return HttpResponse('Blog Home')
-	return render(request,'blog/home.html')
+	return render(request,'blog/home.html',context)
 
 
 
